@@ -12,7 +12,7 @@ Open up a terminal and enter:
 git clone https://github.com/RobbieZhao/Tetris.git
 
 # Change your directory:
-cd build
+cd Tetris/build
 
 # Create a makefile
 cmake ..
