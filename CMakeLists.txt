@@ -22,10 +22,10 @@
 cmake_minimum_required(VERSION 3.15)
 
 #the project is called asteroids
-project(testSFML)
+project(Tetris)
 
 #the project contains an executable named testSFML that uses the following cpp files
-add_executable(testSFML src/helloSFML.cpp src/mainFunctions.cpp)
+add_executable(Tetris src/main.cpp src/mainFunctions.cpp)
 
 #create a folder named "cmake" at the top of your project and put the
 #findSFML.cmake file in it.  This line tells Cmake to look there for
@@ -39,7 +39,7 @@ add_executable(testSFML src/helloSFML.cpp src/mainFunctions.cpp)
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
 #tells Cmake that the asteroids executable needs to be linked with SFML
-target_link_libraries(testSFML sfml-graphics sfml-audio)
+target_link_libraries(Tetris sfml-graphics sfml-audio)
 
 #passes an option to clang when compiling to use recent c++ stuff
-target_compile_options(testSFML PUBLIC -std=c++17)
+target_compile_options(Tetris PUBLIC -std=c++17)
